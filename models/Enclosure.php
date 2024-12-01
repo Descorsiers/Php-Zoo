@@ -90,7 +90,7 @@ class Enclosure extends Database{
     }
 
     /**
-     * Function that get one existing enclosure in the database by an id
+     * Function that get one existing enclosure in the database by it's id
      * @return PDOStatement
      */
 
@@ -131,6 +131,11 @@ class Enclosure extends Database{
         $stmt->execute();
         return $stmt;
     }
+
+    /**
+     * Delete an enclosure on the database by it's id
+     * @return PDOStatement
+     */
 
     public function delete(){
         $sql = 'DELETE FROM `enclos` WHERE `id` = :id';

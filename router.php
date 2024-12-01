@@ -15,6 +15,18 @@ switch ($_SERVER['REDIRECT_URL']) {
     case '/enclosure/delete':
         require './controllers/enclosures/deleteCtrl.php';
         break;
+    case '/enclosure/animals':
+        require './controllers/animals/indexCtrl.php';
+        break;
+    case '/animal':
+        require './controllers/animals/updateCtrl.php';
+        break;
+    case '/animal/create':
+        require './controllers/animals/createCtrl.php';
+        break;
+    case '/animal/delete':
+        require './controllers/animals/deleteCtrl.php';
+        break;
     default:
         require './views/404.php';
         break;

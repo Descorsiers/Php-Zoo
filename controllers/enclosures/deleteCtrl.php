@@ -16,10 +16,10 @@ if(!empty($_POST['delete__id'])){
     try {
         $enclosure->setId($_POST['delete__id']);
     } catch (\Exception $e) {
-        $errors['delete'] = $e->getMessage();
+        $errors['delete__id'] = $e->getMessage();
     }
 } else {
-    $errors['delete'] = 'Une erreur c\'est produite';
+    $errors['delete__id'] = 'Une erreur c\'est produite';
 }
 if(empty($errors)){
     $enclosure->delete();

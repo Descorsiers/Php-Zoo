@@ -8,7 +8,7 @@
         <?php foreach($data['content'] as $enclosure):  ?>
             <div class="enclosure__container">
                 <h3 class="enclosure__title">
-                    <a class="enclosure__animals" href="animals?id=<?php echo $enclosure->id ?>">
+                    <a class="enclosure__animals" href="enclosure/animals?id=<?php echo $enclosure->id ?>">
                         <?php echo $enclosure->name ?>
                     </a>
                 </h3>

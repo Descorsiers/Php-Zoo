@@ -5,7 +5,7 @@ $enclos__id = null;
 
 $errors = [];
 
-if (empty($_GET['id'])) header('Location: /404');
+if (empty($_GET['id'])) header('Location: 404');
 
 $enclosure = new Enclosure();
 
@@ -36,6 +36,7 @@ if(!empty($_POST)){
     }
     if (empty($errors)) {
         $enclosure->update();
+        header('Location: /');
     }
 }
 

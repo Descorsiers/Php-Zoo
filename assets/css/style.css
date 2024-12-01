@@ -93,15 +93,15 @@ body{
     }
 }
 
-/* Style for page with all enclosures */
+/* Style for page with all enclosures/animals */
 
-.allEnclosures{
+.allEnclosures, .allAnimals{
     display: flex;
     flex-direction: column;
     flex: content;
     gap: 30px;
 }
-.enclosure__container{
+.enclosure__container, .animal__container{
     background-color: white;
     padding: 0 20px;
     border-radius: 20px;
@@ -110,7 +110,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.enclosure__title{
+.enclosure__title, .animal__title{
     color: black;
     font-size: 2em;
     font-family: 'Raleway';
@@ -119,24 +119,24 @@ body{
     text-decoration: none;
     color: black;
 }
-.enclosure__update-delete{
+.enclosure__update-delete, .animal__update-delete{
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.enclosure__delete, .enclosure__update{
+.enclosure__delete, .enclosure__update, .animal__update, .animal__delete{
     color: black;
     background-color: inherit;
     border: none;
     cursor: pointer;
 }
-.newEnclosure__container{
+.newEnclosure__container, .newAnimal__container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
 }
-.newEnclosure{
+.newEnclosure, .newAnimal{
     font-family: 'Nunito';
     text-decoration: none;
     background-color: white;
@@ -146,7 +146,7 @@ body{
     font-size: 1.5em;
 }
 
-/* Style for the update/create enclosure page */
+/* Style for the update/create enclosure/animal page */
 
 .form__update, .form__create{
     padding: 30px;
@@ -156,17 +156,17 @@ body{
     flex-direction: column;
     gap: 30px;
 }
-.enclosure__title-container, .enclosure__description-container{
+.enclosure__title-container, .enclosure__description-container, .animal__title-container, .animal__description-container, .animal__species-container, .animal__enclosure-container{
     display: flex;
     flex-direction: column;
     gap: 10px;
     border-radius: 15px;
 }
-.enclosure__title-label, .description__label{
+.enclosure__title-label, .description__label, .animal__title-label, .animal__description-label, .animal__species-label, .animal__enclosure-label{
     font-size: 2em;
     font-family: 'Raleway';
 }
-#description__update, #enclosure__title-update, #description__create, #enclosure__title-create{
+#description__update, #enclosure__title-update, #description__create, #enclosure__title-create, #animal__title-update, #animal__description-update, #animal__species-update, #animal__enclosure-update, #animal__title-create, #animal__description-create, #animal__species-create, #animal__enclosure-create{
     font-family: 'Nunito';
     font-size: 1.5em;
     padding: 10px;

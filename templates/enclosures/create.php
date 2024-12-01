@@ -6,7 +6,7 @@
     </div>
     <form action="" class="form__create" method="post">
         <div class="enclosure__title-container">
-            <label for="enclosure__title" class="enclosure__title-label">
+            <label for="enclosure__title-create" class="enclosure__title-label">
                 Nom de l'enclos : 
             </label>
             <input required name="enclosure__title-create" id="enclosure__title-create" type="text" value="<?php echo (!empty($data['errors']) && !isset($data['errors']['enclosure__title-create'])) ? $_POST['enclosure__title-create'] : '' ?>">
